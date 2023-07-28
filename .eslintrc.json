@@ -1,0 +1,8 @@
+{
+  "root": true,
+  "extends": ["standard", "standard-jsx"],
+  "rules": {
+    "comma-dangle": "off",
+    "space-before-function-paren": "off"
+  }
+}
