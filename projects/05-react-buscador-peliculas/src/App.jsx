@@ -21,10 +21,6 @@ export function App() {
     debouncedGetMovies(query)
   }
 
-  debounce(() => {
-    console.log('searhc')
-  }, 1000)
-
   const handleSubmit = (event) => {
     event.preventDefault()
     searchMovies({ query })
