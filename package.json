@@ -5,13 +5,23 @@
   "main": "index.js",
   "scripts": {
     "format": "prettier . --write",
-    "lint": "eslint . --fix --ext .js,.jsx"
+    "lint": "eslint . --fix --ext .js,.jsx",
+    "prepare": "husky install"
   },
+  "workspaces": [
+    "projects/**"
+  ],
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "husky": "8.0.3",
+    "lint-staged": "13.2.3",
     "prettier": "3.0.0",
     "standard": "17.1.0"
+  },
+  "lint-staged": {
+    "*.{html,css,js,jsx,ts,tsx,json,md}": "prettier --write",
+    "*.{js,jsx,ts,tsx}": "eslint --fix"
   }
 }
