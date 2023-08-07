@@ -3,6 +3,8 @@
   "extends": ["standard", "standard-jsx"],
   "rules": {
     "comma-dangle": "off",
-    "space-before-function-paren": "off"
+    "space-before-function-paren": "off",
+    "no-multiple-empty-lines": "off",
+    "no-trailing-spaces": "off"
   }
 }
